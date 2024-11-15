@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="index.html">Logo</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="fotografia.html">Fotografia</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="ciutat.html">Ciutat</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="transparent.html">Transparent</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="tasca3.html">Tasca 3</a>
+      </button>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 max-w-[1200px] mx-auto"
+    >
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img src="images/fotografia.jpg" alt="Imatge Original JPG" class="w-[700px] h-auto mx-auto" />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img src="images/fotografia.gif" alt="Imatge en GIF" class="w-[700px] h-auto mx-auto" />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img src="images/fotografia.png" alt="Imatge en PNG" class="w-[700px] h-auto mx-auto" />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img src="images/fotografiacompressiomitjana.jpg" alt="Imatge JPEG en compressio mitjana" class="w-[700px] h-auto mx-auto" />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img src="images/fotografiacompressioalta.jpg" alt="Imatge JPEG en compressio alta" class="w-[700px] h-auto mx-auto" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md mt-10">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Anàlisi</h1>
+      <div class="border-l-4 border-blue-500 pl-4">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700"> Quin format és el més òptim per aquest tipus d’imatge i per què?</span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          El format més optim per aquesta imatge és el <span class="font-bold text-blue-600">JPEG</span>, ja que comprimeix molt be els detalls i els colors, com per exemple les montanyes del fons o la gespa, perd molt poca qualitat, en el cas del <span class="font-bold text-blue-600">PNG</span> el problema que tenim és quue la imatge pesa massa per el que necessitem.
+    
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">Amb quin nivell de compressió no es perd qualitat visible?</span>
+        </p>
+        <p class="text-gray-600 mt-2">  
+          En el cas de aquesta imatge al tenir tanta resolució i tants detalls no es perd qualitat visible fins la compressió alta.
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">Podem reduir la mida encara més sense perdre qualitat?</span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          En <span class="font-bold text-blue-600">JPEG</span>, es pot reduir la mida aumentant la compressió, però això afecta la qualitat. Per mantenir una bona qualitat i reduir la mida, és millor optimitzar la imatge per a la web amb eines que equilibren compressió i qualitat, utilitzant una compressió balançejada.
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">Què passaria si desem la imatge diverses vegades en format JPEG?</span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          Cada vegada que guardem una imatge en format <span class="font-bold text-blue-600">JPEG</span>, es perd una mica de qualitat perquè es comprimeix. Si la guardem moltes vegades, la imatge es deteriora i poden aparèixer defectes com distorsions</p>
+        </p>
+        </div>
+    </div>
+  </body>
+</html>

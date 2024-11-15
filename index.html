@@ -14,26 +14,89 @@
     <header class="bg-blue-500 text-white text-center p-5">
       <h1 class="text-4xl">Image Format Experiment</h1>
     </header>
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="index.html">Logo</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="fotografia.html">Fotografia</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="ciutat.html">Ciutat</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="transparent.html">Transparent</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="tasca3.html">Tasca 3</a>
+      </button>
+    </div>
     <main
       class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
     >
       <div>
-        <img src="images/logotip.png" alt="Example 1" class="w-full" />
+        <img src="images/logotip.png" alt="Imatge Original" class="w-full" />
         <div class="image-info"></div>
       </div>
       <div>
-        <img src="images/plujaEstels.jpg" alt="Example 2" class="w-full" />
+        <img src="images/logotip.gif" alt="Imatge en GIF" class="w-full" />
         <div class="image-info"></div>
       </div>
       <div>
-        <img src="images/postaDeSol.jpg" alt="Example 3" class="w-full" />
+        <img
+          src="images/logotipcompressiobaix.jpg"
+          alt="Imatge JPEG en compressio baixa"
+          class="w-full"
+        />
         <div class="image-info"></div>
       </div>
       <div>
-        <img src="images/transparency.png" alt="Example 3" class="w-full" />
+        <img
+          src="images/logotipcompressiomitjana.jpg"
+          alt="Imatge JPEG en compressio mitjana"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="images/logotipcompressioalta.jpg"
+          alt="Imatge JPEG en compressio alta"
+          class="w-full"
+        />
         <div class="image-info"></div>
       </div>
     </main>
     <script src="scripts/main.js"></script>
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md mt-10">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Anàlisi</h1>
+      <div class="border-l-4 border-blue-500 pl-4">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700"
+            >Quin format és el més òptim per aquest tipus d’imatge i per
+            què?</span
+          >
+        </p>
+        <p class="text-gray-600 mt-2">
+          En aquest cas, el format més òptim és el
+          <span class="font-bold text-blue-600">PNG</span>, ja que manté una
+          qualitat alta del logo i suporta transparència. En canvi, el
+          <span class="font-bold text-blue-600">JPEG</span>, quan es comprimeix,
+          afecta a els detalls del logo.
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700"
+            >Es podria reduir encara més la mida? Perdria qualitat?</span
+          >
+        </p>
+        <p class="text-gray-600 mt-2">
+          Si es redueix més la mida, es perdria molta qualitat i la imatge no es
+          podria veure bé. És important mantenir un equilibri entre mida i
+          qualitat.
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="index.html">Logo</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="fotografia.html">Fotografia</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="ciutat.html">Ciutat</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="transparent.html">Transparent</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="tasca3.html">Tasca 3</a>
+      </button>
+    </div>
+
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md mt-10">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Tasca 3</h1>
+
+      <div class="border-l-4 border-blue-500 pl-4">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">
+            Què diu Lighthouse sobre el rendiment de les imatges?
+          </span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          Diu que les imatges no estan del tot optimitzades, i això fa que la
+          pàgina trigui més a carregar. També comenta que caldria utilitzar
+          formats d’imatge més moderns i definir les mides de les imatges per
+          evitar problemes.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">Quins són els problemes principals?</span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          - Les imatges no estan en formats nous com WebP o AVIF, que són més
+          lleugers. <br />
+          - No estan ben comprimides, així que ocupen massa espai. <br />
+          - No tenen les mides definides, i això pot fer que el contingut es
+          mogui quan carreguen. <br />
+          - No estan configurades per aprofitar la memòria cau.
+        </p>
+      </div>
+
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">Quines recomanacions ofereix?</span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          - Passar les imatges a formats més nous com WebP o AVIF perquè pesin
+          menys. <br />
+          - Comprimir millor les imatges per fer-les més petites. <br />
+          - Afegir mides a les imatges (`width` i `height`) per evitar que
+          moguin el contingut. <br />
+          - Configurar-les perquè es guardin a la memòria cau i es carreguin més
+          ràpid.
+        </p>
+      </div>
+      <div class="mt-10 mb-10">
+        <p class="text-lg font-semibold text-gray-700">
+            <span class="text-blue-700">Analisí de Rendiment</span>
+          </p>
+        <p class="text-gray-600">
+          Amb una connexió lenta 3G, les imatges triguen massa a carregar perquè
+          no estan prou optimitzades. S’utilitzen formats antics com PNG i JPEG,
+          i algunes imatges es carreguen repetidament. Caldria comprimir millor,
+          usar formats moderns com WebP i fer servir tècniques com el lazy
+          loading per millorar-ho.
+        </p>
+        <img src="images/analisirendiment.png" alt="" />
+      </div>
+      <div class="items-center justify-center text-center mt-10">
+        <a class="bg-blue-500 p-5 text-white font-bold" href="Lighthouse.html"
+          >Analisí de Lighthouse</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

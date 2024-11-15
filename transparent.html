@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="index.html">Logo</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="fotografia.html">Fotografia</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="ciutat.html">Ciutat</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="transparent.html">Transparent</a>
+      </button>
+      <button class="bg-blue-500 p-6 font-bold text-white">
+        <a href="tasca3.html">Tasca 3</a>
+      </button>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-[1400px] mx-auto"
+    >
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img
+          src="images/transparent.png"
+          alt="Imatge Original PNG"
+          class="w-[700px] h-auto mx-auto"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img
+          src="images/transparent.gif"
+          alt="Imatge en GIF"
+          class="w-[700px] h-auto mx-auto"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img
+          src="images/transparentcompressiobaixa.jpg"
+          alt="Imatge JPEG en compressio baixa"
+          class="w-[700px] h-auto mx-auto"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img
+          src="images/transparentcompressiomitjana.jpg"
+          alt="Imatge JPEG en compressio mitjana"
+          class="w-[700px] h-auto mx-auto"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div class="p-5 border border-gray-300 rounded-lg">
+        <img
+          src="images/transparentcompressioalta.jpg"
+          alt="Imatge JPEG en compressio alta"
+          class="w-[700px] h-auto mx-auto"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+    <div class="p-6 bg-blue-100 rounded-lg shadow-md mt-10">
+      <h1 class="text-4xl font-bold text-blue-600 mb-4">Anàlisi</h1>
+      <div class="border-l-4 border-blue-500 pl-4">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700"
+            >Quin format és el més òptim per aquest tipus d’imatge i per
+            què?</span
+          >
+        </p>
+        <p class="text-gray-600 mt-2">
+          El format més òptim per aquesta imatge és  <span class="font-bold text-blue-600">PNG</span>, perquè té un degradat
+          de colors i, a més, és capaç de mantenir la transparència
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700">
+            Què passa quan la guardem en format JPEG?
+          </span>
+        </p>
+        <p class="text-gray-600 mt-2">
+          Si guardes aquesta imatge en format <span class="font-bold text-blue-600">JPEG</span>, es perdrà qualitat perquè el
+          <span class="font-bold text-blue-600">JPEG</span> aplica compressió amb pèrdues. Això pot provocar que el degradat
+          es vegi amb bandes
+        </p>
+      </div>
+      <div class="border-l-4 border-blue-500 pl-4 mt-6">
+        <p class="text-lg font-semibold text-gray-700">
+          <span class="text-blue-700"
+            >Si la nostra web té un fons blanc, quin format seria el més òptim i
+            per què?</span
+          >
+        </p>
+        <p class="text-gray-600 mt-2">
+          Si el fons de la web és blanc, pots utilitzar  <span class="font-bold text-blue-600">JPEG</span> perquè ocupa menys
+          espai (carrega més ràpidament) i no necessites conservar la
+          transparència.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
